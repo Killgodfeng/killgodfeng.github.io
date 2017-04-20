@@ -5,9 +5,9 @@
 # Site
 title: 刘卫峰的博客
 subtitle: 个人站
-description:
-author: John Doe
-language:
+description: 前端小白的探索之路..
+author: 刘卫峰
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cover
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
