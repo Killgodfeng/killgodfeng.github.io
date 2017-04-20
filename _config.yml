@@ -21,7 +21,7 @@ permalink_defaults:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: 我的
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -69,5 +69,5 @@ theme: cover
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Killgodfeng/killgodfeng.github.io.git
+  repo: git@github.com:Killgodfeng/killgodfeng.github.io.git
   branch: master
