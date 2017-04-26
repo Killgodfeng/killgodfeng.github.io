@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://Killgodfeng.github.io">
-  <title>Next主题的配置 | 刘卫峰的博客</title>
+  <title>JS原型、原型链深入理解 | 刘卫峰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Next主题在这里Downloads Next主题代码将下载的代码放在myBlog/theme/next目录下设置站点myBlog/_config.yml的theme字段值为next生成新页面hexo g开启服务hexo s –debug发布代码hexo d">
+  <meta name="description" content="原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。 一、初识原型在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[P">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Next主题的配置">
-<meta property="og:url" content="https://Killgodfeng.github.io/2017/04/20/123/index.html">
+<meta property="og:title" content="JS原型、原型链深入理解">
+<meta property="og:url" content="https://Killgodfeng.github.io/2017/04/26/hellow/index.html">
 <meta property="og:site_name" content="刘卫峰的博客">
-<meta property="og:description" content="使用Next主题在这里Downloads Next主题代码将下载的代码放在myBlog/theme/next目录下设置站点myBlog/_config.yml的theme字段值为next生成新页面hexo g开启服务hexo s –debug发布代码hexo d">
-<meta property="og:updated_time" content="2017-04-22T07:29:19.208Z">
+<meta property="og:description" content="原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。 一、初识原型在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[P">
+<meta property="og:updated_time" content="2017-04-26T05:14:21.689Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Next主题的配置">
-<meta name="twitter:description" content="使用Next主题在这里Downloads Next主题代码将下载的代码放在myBlog/theme/next目录下设置站点myBlog/_config.yml的theme字段值为next生成新页面hexo g开启服务hexo s –debug发布代码hexo d">
+<meta name="twitter:title" content="JS原型、原型链深入理解">
+<meta name="twitter:description" content="原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。 一、初识原型在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[P">
   
     <link rel="alternative" href="/atom.xml" title="刘卫峰的博客" type="application/atom+xml">
   
@@ -158,27 +158,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-123" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hellow" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Next主题的配置
+      JS原型、原型链深入理解
     </h1>
   
 
         
-        <a href="/2017/04/20/123/" class="archive-article-date">
-  	<time datetime="2017-04-20T08:37:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+        <a href="/2017/04/26/hellow/" class="archive-article-date">
+  	<time datetime="2017-04-26T05:10:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用Next主题<br>在这里Downloads Next主题代码<br>将下载的代码放在myBlog/theme/next目录下<br>设置站点myBlog/_config.yml的theme字段值为next<br>生成新页面hexo g<br>开启服务hexo s –debug<br>发布代码hexo d</p>
+        <p>原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。</p>
+<p>一、初识原型<br>在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。<br>“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了<strong>proto</strong>这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器”Object.getPrototype(object)”）。在JavaScript的原型对象中，还包含一个”constructor”属性，这个属性对应创建所有指向该原型的实例的构造函数</p>
 
       
 
@@ -258,7 +259,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://Killgodfeng.github.io/2017/04/20/123/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://Killgodfeng.github.io/2017/04/26/hellow/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,20 +273,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/04/20/我的第一篇日志-1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/20/123/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          有哪些好看的 Hexo 主题？
+          Next主题的配置
         
       </div>
     </a>
   
-  
-    <a href="/2017/04/26/hellow/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JS原型、原型链深入理解</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
