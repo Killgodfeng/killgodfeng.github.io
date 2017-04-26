@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://Killgodfeng.github.io/2017/04/26/hellow/index.html">
 <meta property="og:site_name" content="刘卫峰的博客">
 <meta property="og:description" content="原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。 一、初识原型在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[P">
-<meta property="og:updated_time" content="2017-04-26T05:14:21.689Z">
+<meta property="og:updated_time" content="2017-04-26T05:34:57.128Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS原型、原型链深入理解">
 <meta name="twitter:description" content="原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。 一、初识原型在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[P">
@@ -179,7 +179,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>原型是javeScript中一个比较难理解的概念，远行相关的属性也比较多，对象有“prototype”属性，函数对象有“prototype”属性，原型对象有“constructor”属性。</p>
-<p>一、初识原型<br>在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。<br>“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了<strong>proto</strong>这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器”Object.getPrototype(object)”）。在JavaScript的原型对象中，还包含一个”constructor”属性，这个属性对应创建所有指向该原型的实例的构造函数</p>
+<p>一、初识原型<br>在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。<br>“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了<strong>proto</strong>这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器”Object.getPrototype(object)”）。在JavaScript的原型对象中，还包含一个”constructor”属性，这个属性对应创建所有指向该原型的实例的构造函数。<br>二、在JavaScript中，每个函数 都有一个prototype属性，当一个函数被用作构造函数来创建实例时，这个函数的prototype属性值会被作为原型赋值给所有对象实例（也就是设置 实例的<code>__proto__</code>属性），也就是说，所有实例的原型引用的是函数的prototype属性。(<strong><strong><code>只有函数对象才会有这个属性!</code></strong></strong>)<br>new 的过程分为三步  </p>
+<p>var p = new Person(‘张三’,20);</p>
+<ol>
+<li>var p={}; 初始化一个对象p。</li>
+<li>p.<em>proto</em>=Person.prototype;，将对象p的 <strong>proto</strong> 属性设置为 Person.prototype</li>
+<li>Person.call(p,”张三”,20);调用构造函数Person来初始化p。关于call/apply使用</li>
+</ol>
 
       
 
